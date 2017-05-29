@@ -13,4 +13,8 @@
 ##         Variables        ##
 ##############################
 
-sleep = time.sleep
+nombre = raw_input('Introduzca fichero:')
+manejador = open(nombre, 'r')
+texto = manejador.read()
+palabras = texto.split()
+contadores = dict()
