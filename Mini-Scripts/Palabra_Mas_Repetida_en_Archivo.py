@@ -24,7 +24,7 @@ contadores = dict()
 ##############################
 
 for palabra in palabras:
-    contador[palabra] = contadores.get(palabra, 0) + 1
+    contadores[palabra] = contadores.get(palabra, 0) + 1
 
 mayorcantidad = None
 mayorpalabra = None
@@ -37,4 +37,9 @@ for palabra,contador in contadores.items():
 #comparar con la tercera y asi sucesivamente hasta que no hayan palabras que
 #coincidan el mismo número de veces
 
-print 'La mayor palabra es' mayorpalabra ' y la cantidad de repeticiones es ' mayorcantidad
+print ''
+print 'La mayor palabra es:'
+print mayorpalabra
+print
+print 'La cantidad de veces repetida es:'
+print mayorcantidad
