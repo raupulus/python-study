@@ -9,6 +9,9 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
+#Este script cuenta el número repetidas para devolver cual es la que se
+#repite un mayor número de veces
+
 ##############################
 ##         Variables        ##
 ##############################
