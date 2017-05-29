@@ -36,6 +36,7 @@ for palabra,contador in contadores.items():
         mayorpalabra = palabra
         mayorcantidad = contador
 
+#FIXME
 #Estaria bien comparar con la segunda, si coincide la misma cantidad de veces
 #comparar con la tercera y asi sucesivamente hasta que no hayan palabras que
 #coincidan el mismo número de veces
