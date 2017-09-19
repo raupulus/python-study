@@ -13,13 +13,19 @@
 ##    Importar Librerías    ##
 ##############################
 
-import time #Importamos la libreria time --> time.sleep
-import os #Importamos la libreria para comandos de la consola/shell
-import random #Genera números aleatorios --> random.randrange(1,100)
-# import nombre_libreria as nuevo_nombre_libreria
+from pyexcel_ods import get_data
+
 
 ##############################
 ##         Variables        ##
 ##############################
 
-sleep = time.sleep
+data = get_data("publicar.ods")
+
+#Ejemplo en JSON
+#import json
+#print(json.dumps(data))
+#{"Sheet 1": [[1, 2, 3], [4, 5, 6]], "Sheet 2": [["row 1", "row 2", "row 3"]]}
+
+
+
