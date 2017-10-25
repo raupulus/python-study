@@ -9,6 +9,8 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
+# Este script obtiene la dirección IP del equipo que la ejecuta
+
 ##############################
 ##         Variables        ##
 ##############################
