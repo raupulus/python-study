@@ -9,8 +9,8 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
-#Este script cuenta el número repetidas para devolver cual es la que se
-#repite un mayor número de veces
+# Este script cuenta el número repetidas para devolver cual es la que se
+# repite un mayor número de veces
 
 ##############################
 ##         Variables        ##
@@ -31,15 +31,15 @@ for palabra in palabras:
 
 mayorcantidad = None
 mayorpalabra = None
-for palabra,contador in contadores.items():
+for palabra, contador in contadores.items():
     if mayorcantidad is None or contador > mayorcantidad:
         mayorpalabra = palabra
         mayorcantidad = contador
 
-#FIXME
-#Estaria bien comparar con la segunda, si coincide la misma cantidad de veces
-#comparar con la tercera y asi sucesivamente hasta que no hayan palabras que
-#coincidan el mismo número de veces
+# FIXME
+# Estaria bien comparar con la segunda, si coincide la misma cantidad de veces
+# comparar con la tercera y asi sucesivamente hasta que no hayan palabras que
+# coincidan el mismo número de veces
 
 print ''
 print 'La mayor palabra es:'
