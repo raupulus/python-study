@@ -22,8 +22,8 @@ salida = codecs.open('test.csv', 'w', encoding='utf8')
 
 #Pasar cada línea al archivo csv
 for lines in sheet:
-	#Con la siguiente opción se crea un csv por cada hoja existente:
-	#print(lines).save_as("Hoja.csv")
-	for line in lines:
-		print('Escribiendo: ' + line[0])
-		salida.write(line[0] + '\n')
+    #Con la siguiente opción se crea un csv por cada hoja existente:
+    #print(lines).save_as("Hoja.csv")
+    for line in lines:
+        print('Escribiendo: ' + line[0])
+        salida.write(line[0] + '\n')
