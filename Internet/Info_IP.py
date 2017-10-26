@@ -34,3 +34,8 @@ def getPais(IP):
     elif len(str(pais)) > 200:
         print("No ha sido posible conseguir el país para la IP → " + str(IP))
         pais = ''
+
+    # Devuelve el país o la cadena vacía
+    return pais
+
+print getPais('8.8.8.8')
