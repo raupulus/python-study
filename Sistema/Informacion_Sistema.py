@@ -33,6 +33,11 @@ class info():
         sysName = os.uname()[1]
         return sysName
 
+    # Obtener tipo del Sistema Operativo
+    def getSysType(self):
+        sysType = os.uname()[0]
+        return sysType
+
     # Obtener Fecha y Hora actual en el sistema
     def getFullDate(self):
         fecha = datetime.datetime.today()
