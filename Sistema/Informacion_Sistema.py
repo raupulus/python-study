@@ -38,6 +38,11 @@ class info():
         sysType = os.uname()[0]
         return sysType
 
+    # Obtener Versión del Kernel
+    def getSysKernel(self):
+        sysKernel = os.uname()[2]
+        return sysKernel
+
     # Obtener Fecha y Hora actual en el sistema
     def getFullDate(self):
         fecha = datetime.datetime.today()
