@@ -18,6 +18,7 @@
 ##         LIBRERÍAS        ##
 ##############################
 import os
+import datetime
 
 
 class info():
@@ -26,3 +27,8 @@ class info():
     def getUser(self):
         user = os.getlogin()
         return user
+
+    # Obtener Fecha y Hora actual en el sistema
+    def getFullDate(self):
+        fecha = datetime.datetime.today()
+        return fecha
