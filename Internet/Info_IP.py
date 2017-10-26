@@ -26,3 +26,11 @@ def getPais(IP):
     # Limpiar País
     pais = pais.split('\n')[0].split(': ')[1]
 
+    # Si no está instalado el programa "geoiplookup"
+    if pais == "sh: geoiplookup: not found":
+        print("Necesitas instalar geoiplookup para poder continuar")
+        pais = ''
+    #Cuando ocurre un error o extrae cadena no válida
+    elif len(str(pais)) > 200:
+        print("No ha sido posible conseguir el país para la IP → " + str(IP))
+        pais = ''
