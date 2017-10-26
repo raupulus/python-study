@@ -9,6 +9,10 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
+# Script que contiene una clase, la cual al instanciarla creará
+# un objeto con todos los datos del sistema que estamos usando
+# de forma que será accesible desde fuera
+
 ##############################
 ##         LIBRERÍAS        ##
 ##############################
