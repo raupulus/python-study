@@ -28,6 +28,11 @@ class info():
         user = os.getlogin()
         return user
 
+    # Obtener nombre del Equipo
+    def getSysName(self):
+        sysName = os.uname()[1]
+        return sysName
+
     # Obtener Fecha y Hora actual en el sistema
     def getFullDate(self):
         fecha = datetime.datetime.today()
