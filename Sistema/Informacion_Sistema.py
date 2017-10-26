@@ -48,6 +48,11 @@ class info():
         sysInfo = os.uname()[3]
         return sysInfo
 
+    # Obtener arquitectura del Sistema Operativo
+    def getSysArch(self):
+        sysArch = os.uname()[4]
+        return sysArch
+
     # Obtener Fecha y Hora actual en el sistema
     def getFullDate(self):
         fecha = datetime.datetime.today()
