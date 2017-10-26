@@ -16,3 +16,13 @@
 ##############################
 ##         LIBRERÍAS        ##
 ##############################
+import commands
+
+def getPais(IP):
+
+    # Extraer cadena con el pais
+    pais = commands.getoutput("geoiplookup " + str(IP))
+
+    # Limpiar País
+    pais = pais.split('\n')[0].split(': ')[1]
+
